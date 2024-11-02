@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     #Modelo preditivo
 
-    labels = ['Clube', 'Rodada', 'Posicao', 'Pts', 'J', 'V', 'E', 'D', 'GP', 'GC'] #Variáveis utilizadas
+    labels = ['Posicao', 'Pts', 'J', 'V', 'E', 'D', 'GP', 'GC'] #Variáveis utilizadas
 
     X = train[labels]
 
