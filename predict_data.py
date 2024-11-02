@@ -23,13 +23,15 @@ if __name__ == '__main__':
     
     lr.fit(X, y)
 
-    score = lr.score(X, y)
-
-    print('Score\t', score)
+    print('Variáveis\t', labels)
 
     coef = lr.coef_
 
     print('Coeficientes\t', coef)
+
+    score = lr.score(X, y)
+
+    print('Score\t', score)
 
     pred = lr.predict(test[labels])
 
