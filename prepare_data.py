@@ -43,7 +43,7 @@ def set_test_dataset(folder='./test/'):
 
     test_df = pd.concat(test_dfs)
 
-    test_labels = ['Clube', 'Rodada', 'Posicao', 'Pts', 'J', 'V', 'E', 'D', 'GP', 'GC']
+    test_labels = ['Clube', 'Rodada', 'Posicao', 'Pts', 'J', 'V', 'E', 'D', 'GP', 'GC', 'SG']
 
     test_df['GP'] = test_df['Gols'].str.split(':').str[0]
 
