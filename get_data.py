@@ -21,7 +21,7 @@ def download_data_from_source(ano, train_or_test, inicio=1, fim=38):
 
         while(responsive_table is None):
 
-            url = f'https://www.transfermarkt.com.br/campeonato-brasileiro-serie-a/formtabelle/wettbewerb/BRA1?saison_id={ano-1}&min={1}&max={rodada}'
+            url = f'https://www.transfermarkt.com.br/campeonato-brasileiro-serie-a/formtabelle/wettbewerb/GB1?saison_id={ano}&min={1}&max={rodada}'
 
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36'}
 
@@ -47,7 +47,7 @@ def download_data_from_source(ano, train_or_test, inicio=1, fim=38):
 
     df = pd.DataFrame(data, columns=columns)
 
-    output_filename = f"./{train_or_test}/BRASILEIRAO_{ano}.csv"
+    output_filename = f"./{train_or_test}/EPL_{ano}.csv"
 
     df.to_csv(output_filename, index=False)
 

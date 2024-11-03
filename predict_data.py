@@ -1,9 +1,24 @@
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
+from get_data import *
 from prepare_data import *
 
 if __name__ == '__main__':
+
+    #Download da base histórica
+
+    start = 1995
+
+    end = 2024
+
+    #treino
+
+    #years = [download_data_from_source(year, 'train') for year in range(start, end)]
+
+    #teste
+
+    download_data_from_source(end, 'test')
 
     #Tratamento dos dados e geração dos datasets
 
